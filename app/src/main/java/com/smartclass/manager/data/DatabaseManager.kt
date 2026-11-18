@@ -327,6 +327,6 @@ class DatabaseManager(context: Context) {
             db.students.removeAll { it.classId !in validClassIds }
             saveDatabase()
         }
-        return "الأقسام: ${db.classes.size} \vert{} التلاميذ: ${db.students.size} | السجلات: ${db.records.size} (تم إصلاح $orphanStudents)"
+        return "الأقسام: ${db.classes.size} | التلاميذ: ${db.students.size} | السجلات: ${db.records.size} (تم إصلاح $orphanStudents)"
     }
 }
